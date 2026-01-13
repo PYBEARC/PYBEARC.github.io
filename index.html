@@ -1,124 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pei Yu Chang | Robotics & Control</title>
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #222;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-      background: #ffffff;
-    }
-    h1 {
-      margin-bottom: 5px;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-    .subtitle {
-      color: #555;
-      font-size: 1.1em;
-    }
-    .section {
-      margin-top: 20px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+  <meta name="description" content="Pei Yu Chang — Robotics, Control, Autonomous Systems." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="container">
-    <h1>Pei Yu Chang</h1>
-    <div class="subtitle">
-      Robotics · Control · Autonomous Systems
+  <!-- Top nav -->
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Pei Yu Chang</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
-    <div class="section">
-      <p>
-        I am a robotics-focused engineer with interests in control systems,
-        autonomous driving, and system-level safety analysis.
-      </p>
+    <!-- Mobile nav -->
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <div class="wrap mobileNav__inner">
+        <a class="mobileNav__link" href="#about">About</a>
+        <a class="mobileNav__link" href="#experience">Experience</a>
+        <a class="mobileNav__link" href="#projects">Projects</a>
+        <a class="mobileNav__link" href="#skills">Skills</a>
+        <a class="mobileNav__link" href="#contact">Contact</a>
+      </div>
     </div>
+  </header>
 
-    <h2>Experience</h2>
-    <div class="section">
-      <strong>Motional — Systems Engineering Intern</strong><br/>
-      <em>May 2025 – August 2025</em>
-      <ul>
-        <li>
-          Developed safety metrics to identify safety-critical events in autonomous driving systems.
-        </li>
-        <li>
-          Analyzed system behaviors to support early detection of potential collision scenarios.
-        </li>
-        <li>
-          Collaborated with cross-functional teams to align safety metrics with control and planning components.
-        </li>
-      </ul>
-    </div>
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">Robotics · Control · Autonomous Systems</p>
+          <h1 class="hero__title">
+            Hi, I’m <span class="grad">Pei Yu Chang</span>.
+          </h1>
+          <p class="hero__subtitle">
+            I build reliable autonomy with a focus on safety, system-level metrics, and control-aware analysis.
+          </p>
 
-    <h2>Projects</h2>
-    <div class="section">
-      <ul>
-        <li>
-          <strong>Safety Metrics for Autonomous Systems</strong><br/>
-          Designed metrics to evaluate safety-critical interactions and support controller-level decision making.
-        </li>
-        <li>
-          <strong>Control & Robotics Projects</strong><br/>
-          Applied control theory and system modeling in simulation-based robotics experiments.
-        </li>
-      </ul>
-    </div>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+          </div>
 
-    <h2>Skills</h2>
-    <div class="section">
-      <ul>
-        <li><strong>Programming:</strong> Python, C++</li>
-        <li><strong>Robotics & Control:</strong> Control Systems, System Modeling, Simulation</li>
-        <li><strong>Tools:</strong> Git, Linux, ROS (if applicable)</li>
-      </ul>
-    </div>
+          <div class="hero__meta">
+            <a class="pill" href="https://github.com/PYBEARC" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">Resume (PDF)</a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
 
-    <h2>Links</h2>
-    <div class="section">
-      <ul>
-        <li><a href="https://github.com/PYBEARC" target="_blank">GitHub</a></li>
-        <li><a href="#" target="_blank">Resume (PDF)</a></li>
-        <li><a href="#" target="_blank">LinkedIn</a></li>
-      </ul>
-    </div>
+        <div class="hero__card">
+          <div class="card glass">
+            <div class="card__title">Highlights</div>
+            <ul class="card__list">
+              <li>Safety metrics for identifying safety-critical events</li>
+              <li>Control-aware thinking: anticipate & mitigate collision risk</li>
+              <li>Strong engineering foundation: Python/C++, Linux, Git</li>
+            </ul>
+          </div>
 
-    <div class="footer">
-      © 2026 Pei Yu Chang
-    </div>
-  </div>
+          <div class="card mini">
+            <div class="mini__row">
+              <span class="mini__k">Location</span>
+              <span class="mini__v">Taiwan / Open to relocation</span>
+            </div>
+            <div class="mini__row">
+              <span class="mini__k">Focus</span>
+              <span class="mini__v">Safety · Control · Autonomy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>About</h2>
+          <p>Short intro that recruiters can understand in 10 seconds.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3>What I do</h3>
+            <p>
+              I’m interested in bridging autonomy safety and controls. I enjoy turning complex system behaviors into
+              measurable signals that can inform decision making in planning/control stacks.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>What I’m looking for</h3>
+            <p>
+              Internship opportunities in control, autonomy, or systems engineering where I can contribute to safe,
+              robust autonomous behavior.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p>Impact-focused bullets; tie your work to autonomy & control.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tlItem">
+            <div class="tlDot"></div>
+            <div class="tlCard">
+              <div class="tlTop">
+                <div>
+                  <div class="tlRole">Systems Engineering Intern · Motional</div>
+                  <div class="tlTime">May 2025 – Aug 2025</div>
+                </div>
+                <div class="tlTag">Safety / Autonomy</div>
+              </div>
+              <ul class="tlList">
+                <li>Developed safety metrics to identify safety-critical events in autonomy evaluation.</li>
+                <li>Supported early detection of potential collision scenarios through system-level analysis.</li>
+                <li>Designed metrics that can integrate with control/planning components for risk-aware decisions.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Copy/paste another tlItem if you have more experience -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p>Pick 2–4 strong projects. Each card should answer: what, how, result.</p>
+        </div>
+
+        <div class="cards">
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Safety Metrics for Autonomous Interaction</h3>
+              <span class="badge">Autonomy</span>
+            </div>
+            <p class="proj__desc">
+              Designed metrics that capture safety-critical behaviors and support control-aware risk assessment.
+            </p>
+            <ul class="proj__bullets">
+              <li>Defined event taxonomy + signals for critical interactions</li>
+              <li>Enabled consistent evaluation across scenarios</li>
+              <li>Clear interface for downstream control/planning use</li>
+            </ul>
+            <div class="proj__links">
+              <a href="#" class="link">Read more</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Control Simulation Playground</h3>
+              <span class="badge">Control</span>
+            </div>
+            <p class="proj__desc">
+              Implemented basic controllers in simulation to study stability, tracking error, and robustness.
+            </p>
+            <ul class="proj__bullets">
+              <li>PID/LQR experiments and parameter sweeps</li>
+              <li>Visualized tracking & disturbance response</li>
+              <li>Documented design choices and results</li>
+            </ul>
+            <div class="proj__links">
+              <a href="#" class="link">Report</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Perception-to-Action Integration Notes</h3>
+              <span class="badge">Systems</span>
+            </div>
+            <p class="proj__desc">
+              Wrote system-level notes on how evaluation signals map to planning/control decisions.
+            </p>
+            <ul class="proj__bullets">
+              <li>Defined interfaces & assumptions</li>
+              <li>Failure mode analysis and mitigations</li>
+              <li>Practical “what to log / what to alert” checklists</li>
+            </ul>
+            <div class="proj__links">
+              <a href="#" class="link">Notes</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p>Keep it honest and relevant to Control/Autonomy.</p>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">C++</span>
+          <span class="chip">Linux</span>
+          <span class="chip">Git</span>
+          <span class="chip">Control Systems</span>
+          <span class="chip">System Modeling</span>
+          <span class="chip">Simulation</span>
+          <span class="chip">ROS (optional)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Make it easy to reach you.</p>
+        </div>
+
+        <div class="contact">
+          <div class="panel">
+            <h3>Email</h3>
+            <p><a class="link" href="mailto:chang.2314@osu.edu">chang.2314@osu.edu</a></p>
+          </div>
+          <div class="panel">
+            <h3>Links</h3>
+            <p class="contact__links">
+              <a class="pill" href="https://github.com/PYBEARC" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="pill" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="pill" href="#" target="_blank" rel="noreferrer">Resume</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <span>© <span id="year"></span> Pei Yu Chang</span>
+        <a class="toTop" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
