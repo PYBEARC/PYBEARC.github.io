@@ -162,12 +162,29 @@
               </ul>
             </div>
           </div>
-
+          <div class="tlItem">
+            <div class="tlDot"></div>
+            <div class="tlCard">
+              <div class="tlTop">
+                <div>
+                  <div class="tlRole">Systems Engineer · National Chung-Shan Institute of Science & Technology</div>
+                  <div class="tlTime">Nov 2016 – May 2018, Oct 2019 – Jul 2023</div>
+                </div>
+                <div class="tlTag">Systems / Integration</div>
+              </div>
+              <ul class="tlList">
+                <li>Led system integration and interface design for multi-UAV missions, enabling coordinated operations across 20 autonomous UAVs.</li>
+                <li>Designed standardized communication protocols to normalize UAV–GCS interfaces and improve wireless bandwidth utilization.</li>
+                <li>Redesigned ground control systems (GCS) with system redundancy and modern network architectures for MALE UAV platforms.</li>
+                <li>Performed system-level verification, factory acceptance testing (FAT), and cross-team coordination with shipyards and suppliers.</li>
+              </ul>
+            </div>
+          </div>
           <!-- Copy/paste another tlItem if you have more experience -->
         </div>
       </div>
     </section>
-
+    
     <!-- Projects -->
     <section class="section" id="projects">
       <div class="wrap">
@@ -175,66 +192,93 @@
           <h2>Projects</h2>
           <!-- Pick 2–4 strong projects. Each card should answer: what, how, result. -->
         </div>
-
+    
         <div class="cards">
+    
           <article class="proj">
             <div class="proj__top">
-              <h3>Safety Metrics for Autonomous Interaction</h3>
-              <span class="badge">Autonomy</span>
-            </div>
-            <p class="proj__desc">
-              Designed metrics that capture safety-critical behaviors and support control-aware risk assessment.
-            </p>
-            <ul class="proj__bullets">
-              <li>Defined event taxonomy + signals for critical interactions</li>
-              <li>Enabled consistent evaluation across scenarios</li>
-              <li>Clear interface for downstream control/planning use</li>
-            </ul>
-            <div class="proj__links">
-              <a href="#" class="link">Read more</a>
-              <a href="#" class="link">Code</a>
-            </div>
-          </article>
-
-          <article class="proj">
-            <div class="proj__top">
-              <h3>Control Simulation Playground</h3>
+              <h3>Risk-Aware Safe Control with Cooperative Sensing</h3>
               <span class="badge">Control</span>
             </div>
             <p class="proj__desc">
-              Implemented basic controllers in simulation to study stability, tracking error, and robustness.
+              Proposed a risk-aware safe control framework for autonomous driving that integrates cooperative sensing
+              to handle dynamic obstacle avoidance under uncertainty.
             </p>
             <ul class="proj__bullets">
-              <li>PID/LQR experiments and parameter sweeps</li>
-              <li>Visualized tracking & disturbance response</li>
-              <li>Documented design choices and results</li>
+              <li>Formulated safety-critical control using MPC and Control Barrier Functions (CBF)</li>
+              <li>Incorporated tail-risk metrics (CVaR) to address long-tail safety events</li>
+              <li>Validated effectiveness through simulation and experimental studies</li>
             </ul>
             <div class="proj__links">
-              <a href="#" class="link">Report</a>
-              <a href="#" class="link">Code</a>
+              <a href="https://arxiv.org/abs/2511.01403"
+                 class="link" target="_blank" rel="noreferrer">View Paper</a>
             </div>
           </article>
-
+    
           <article class="proj">
             <div class="proj__top">
-              <h3>Perception-to-Action Integration Notes</h3>
+              <h3>Risk-Budgeted Control for Balanced Safety and Performance</h3>
+              <span class="badge">Autonomy</span>
+            </div>
+            <p class="proj__desc">
+              Developed a risk-budgeted control framework that systematically balances safety and performance
+              in autonomous vehicles operating under stochastic environments.
+            </p>
+            <ul class="proj__bullets">
+              <li>Designed CVaR-based constraints within MPC for risk-aware decision making</li>
+              <li>Enabled explicit trade-offs between performance objectives and safety guarantees</li>
+              <li>Demonstrated robustness in complex and rare driving scenarios</li>
+            </ul>
+            <div class="proj__links">
+              <a href="https://arxiv.org/abs/2510.10442"
+                 class="link" target="_blank" rel="noreferrer">View Paper</a>
+            </div>
+          </article>
+    
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Experimental Evaluation of MPC-CBF for Collision Avoidance</h3>
               <span class="badge">Systems</span>
             </div>
             <p class="proj__desc">
-              Wrote system-level notes on how evaluation signals map to planning/control decisions.
+              Conducted experimental evaluations of Model Predictive Control combined with Control Barrier Functions
+              for autonomous driving collision avoidance.
             </p>
             <ul class="proj__bullets">
-              <li>Defined interfaces & assumptions</li>
-              <li>Failure mode analysis and mitigations</li>
-              <li>Practical “what to log / what to alert” checklists</li>
+              <li>Implemented MPC-CBF controllers on real and simulated autonomous driving platforms</li>
+              <li>Analyzed controller behavior under safety-critical and constrained scenarios</li>
+              <li>Provided system-level insights into performance and safety limitations</li>
             </ul>
             <div class="proj__links">
-              <a href="#" class="link">Notes</a>
+              <a href="https://www.sciencedirect.com/science/article/pii/S2405896325017422"
+                 class="link" target="_blank" rel="noreferrer">View Paper</a>
             </div>
           </article>
+    
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Safe Cooperative Control for Autonomous Driving Scenarios</h3>
+              <span class="badge">Systems</span>
+            </div>
+            <p class="proj__desc">
+              Studied safe cooperative control strategies for connected and automated vehicles at highway ramps
+              and intersections, focusing on system-level safety and coordination.
+            </p>
+            <ul class="proj__bullets">
+              <li>Designed cooperative control strategies using safety constraints and shared sensing</li>
+              <li>Improved safety at complex traffic scenarios such as ramps and intersections</li>
+              <li>Performed system-level analysis to evaluate safety and coordination performance</li>
+            </ul>
+            <div class="proj__links">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10920020"
+                 class="link" target="_blank" rel="noreferrer">View Paper</a>
+            </div>
+          </article>
+    
         </div>
       </div>
     </section>
+
 
     <!-- Skills -->
     <section class="section" id="skills">
